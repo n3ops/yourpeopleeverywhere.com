@@ -56,7 +56,7 @@
                 <li class="nav-item"><a class="nav-link" href="#">Plans &amp; Pricing</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">FAQ</a></li>
             </ul>
-            <div class="d-md-none my-2"><!-- From Uiverse.io by gharsh11032000 -->
+            <div class="d-md-none my-2"><a href="#join">
                 <button class="animated-button ms-md-2">
                     <svg class="arr-2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -71,9 +71,10 @@
                         ></path>
                     </svg>
                 </button>
+            </a>
             </div>
         </div>
-        <div class="d-none d-md-block"><!-- From Uiverse.io by gharsh11032000 -->
+        <div class="d-none d-md-block"><a href="#join">
             <button class="animated-button ms-md-2">
                 <svg class="arr-2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -88,6 +89,7 @@
                     ></path>
                 </svg>
             </button>
+        </a>
         </div>
     </div>
 </nav>
@@ -102,9 +104,8 @@
         <div class="col-md-6 d-md-flex align-items-md-center">
             <div style="max-width: 350px;">
                 <h1 class="fw-bolder">Your People, Everywhere.</h1>
-                <p class="my-3">When your people are everywhere, you’re a local wherever you go.</p>
-                <!-- From Uiverse.io by gharsh11032000 -->
-                <button class="animated-button">
+                <p class="my-3">When your people are everywhere, you’re a local wherever you go.</p><a href="#join">
+                <button class="animated-button ms-md-2">
                     <svg class="arr-2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path
                                 d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
@@ -118,6 +119,7 @@
                         ></path>
                     </svg>
                 </button>
+            </a>
 
             </div>
         </div>
@@ -139,7 +141,7 @@
                         connection, ethical tech, and user well-being, we risk deepening the gap between how we live
                         online and how we thrive in reality. </p>
                     <p class="fw-bolder my-3">People don’t need more online friends—they need real
-                        connections.&nbsp;</p><!-- From Uiverse.io by gharsh11032000 -->
+                        connections.&nbsp;</p><a href="#solution">
                     <button class="animated-button-secondary">
                         <svg class="arr-2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -154,6 +156,7 @@
                             ></path>
                         </svg>
                     </button>
+                </a>
 
                 </div>
             </div>
@@ -179,8 +182,7 @@
                     <p class="my-3">Haven isn’t social media. It’s social infrastructure—built to strengthen real-world
                         connection and community, wherever you are.</p>
                     <p class="my-3">By guiding attention away from the screen and back into the moment, Haven helps you
-                        meet the right people, in the right place, at the right time.</p>
-                    <!-- From Uiverse.io by gharsh11032000 -->
+                        meet the right people, in the right place, at the right time.</p><a href="#mission">
                     <button class="animated-button-secondary">
                         <svg class="arr-2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -195,6 +197,7 @@
                             ></path>
                         </svg>
                     </button>
+                </a>
 
                 </div>
             </div>
@@ -235,7 +238,7 @@
                         </li>
                     </ul>
                     <p class="my-3">By transforming digital tools into human infrastructure, we make real-world
-                        connection effortless—and natural again.</p><!-- From Uiverse.io by gharsh11032000 -->
+                        connection effortless—and natural again.</p><a href="#join">
                     <button class="animated-button-secondary">
                         <svg class="arr-2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -250,6 +253,7 @@
                             ></path>
                         </svg>
                     </button>
+                </a>
 
                 </div>
             </div>
@@ -364,6 +368,34 @@
         </div>
     </div>
 </footer>
+<a href="#top">
+    <button class="animated-button-secondary back-to-top">
+        <svg class="arr-2" style="transform: rotate(-90deg);" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path
+                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+            ></path>
+        </svg>
+        <span class="text">Top</span>
+        <span class="circle"></span>
+        <svg class="arr-1" style="transform: rotate(-90deg);" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path
+                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+            ></path>
+        </svg>
+    </button>
+</a>
+<script>
+    const backToTopBtn = document.querySelector('.back-to-top');
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+            backToTopBtn.classList.add('show');
+        } else {
+            backToTopBtn.classList.remove('show');
+        }
+    });
+</script>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 

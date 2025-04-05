@@ -16,10 +16,6 @@ body {
     font-size: 50px;
 }
 
-.blockquote-footer {
-    color: #d0e500;
-}
-
 /* === Section Backgrounds === */
 
 #problem {
@@ -90,5 +86,34 @@ a:hover::after {
 .back-to-top.show {
     display: flex;
     opacity: 1;
+}
+
+.underline-dark, .underline-light {
+    display: inline-block;
+    position: relative;
+}
+
+.underline-dark::after {
+    content: '';
+    position: absolute;
+    bottom: -7px;
+    left: 0;
+    width: 30%;
+    height: 4px;
+    background-color: #244300;
+}
+
+.underline-light::after {
+    content: '';
+    position: absolute;
+    bottom: -7px;
+    left: 0;
+    width: 20%;
+    height: 4px;
+    background-color: #d0e500;
+}
+
+.font-light {
+    color: #eef2ca;
 }
 

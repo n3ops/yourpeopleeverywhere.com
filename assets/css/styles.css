@@ -123,10 +123,15 @@ a:hover::after {
 
 .button-row {
     display: flex;
-    gap: 1rem;
-    justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
-    margin-top: 2rem;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+}
+
+.button-row button {
+    flex: 0 0 auto;
+    width: auto;
+    max-width: 100%;
 }
 

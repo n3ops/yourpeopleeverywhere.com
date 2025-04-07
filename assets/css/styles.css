@@ -37,10 +37,6 @@ body {
     margin-bottom: 25px;
 }
 
-.fit-cover {
-    object-fit: cover;
-}
-
 .check {
     margin-right: 7px;
 }
@@ -133,5 +129,25 @@ a:hover::after {
     flex: 0 0 auto;
     width: auto;
     max-width: 100%;
+}
+
+#individual {
+    background-color: #d0e500;
+}
+
+#business {
+    background-color: #c0d8d8;
+}
+
+#pay-per-use {
+    background-color: #1dbf74;
+}
+
+.free {
+    color: #1dbf74;
+}
+
+.fit-cover {
+    object-fit: cover;
 }
 

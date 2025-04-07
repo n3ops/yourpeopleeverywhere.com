@@ -1,0 +1,161 @@
+.card {
+    position: relative;
+    background: #eef2ca;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+    color: #244300;
+    overflow: hidden;
+    z-index: 0;
+    transition: transform 0.3s ease;
+}
+
+.card::before, .card::after {
+    content: "";
+    position: absolute;
+    background: #1dbf74;
+    transition: all 0.5s;
+    z-index: -1;
+}
+
+/* Default green corners */
+
+.card::before {
+    width: 40px;
+    height: 40px;
+    top: 0;
+    right: 0;
+    border-radius: 0 15px 0 100%;
+}
+
+.card::after {
+    width: 40px;
+    height: 40px;
+    bottom: 0;
+    left: 0;
+    border-radius: 0 100% 0 15px;
+}
+
+/* Hover expands background */
+
+.card:hover::before, .card:hover::after {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+}
+
+/* 💖 DATING CARD EXTRA MAGIC 💖 */
+
+#dating {
+    position: relative;
+    background: radial-gradient(circle at top left, #fff0f5, #ffe6e6);
+    border: 3px solid transparent;
+    border-radius: 15px;
+    background-clip: padding-box;
+    box-shadow: 0 0 18px rgba(255, 77, 109, 0.4);
+    transition: all 0.4s ease;
+    z-index: 1;
+}
+
+#dating::before {
+    content: "";
+    position: absolute;
+    inset: -3px;
+    z-index: -1;
+    border-radius: 15px;
+    background: linear-gradient(135deg, #ff4d6d, #ff99aa, #ff4d6d);
+    background-size: 200% 200%;
+    animation: shimmer 5s linear infinite;
+}
+
+#dating:hover {
+    background: radial-gradient(circle at bottom right, #fff0f5, #ffd6d6);
+    box-shadow: 0 0 24px rgba(255, 77, 109, 0.6);
+}
+
+/* Floating Hearts 💕 */
+
+#dating::after {
+    content: "💖 💕 💘 💓 💞";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.2rem;
+    opacity: 0;
+    animation: floatHearts 4s ease-in-out infinite;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes floatHearts {
+    0% {
+        top: 100%;
+        opacity: 0;
+        transform: translateX(-50%) scale(0.8);
+    }
+    20% {
+        opacity: 1;
+    }
+    100% {
+        top: -20%;
+        opacity: 0;
+        transform: translateX(-50%) scale(1.4);
+    }
+}
+
+.price {
+    color: #d0e500;
+    margin-right: 7px;
+}
+
+.bs-icon {
+    --bs-icon-size: 0.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    font-size: var(--bs-icon-size);
+    width: calc(var(--bs-icon-size) * 2);
+    height: calc(var(--bs-icon-size) * 2);
+    color: #244300;
+}
+
+.bs-icon-md {
+    --bs-icon-size: 1.5rem;
+}
+
+.bs-icon-xs {
+    --bs-icon-size: 1rem;
+    width: calc(var(--bs-icon-size) * 1.5);
+    height: calc(var(--bs-icon-size) * 1.5);
+}
+
+.bs-icon-rounded {
+    border-radius: 0.5rem;
+}
+
+.bs-icon-xs.bs-icon-rounded.bs-icon {
+    color: #244300;
+}
+

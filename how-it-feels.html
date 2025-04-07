@@ -171,7 +171,7 @@
 <section class="py-4 py-xl-5">
     <div class="container">
         <div class="text-center p-4 p-lg-5"><img class="tiny-img" src="assets/img/Smile.webp">
-            <h1 class="fw-bold mb-4">Ready to discover Haven?</h1>
+            <h1 class="display-3 fw-bold mb-4">Ready to discover Haven?</h1>
             <div class="button-row">
                 <button class="animated-button ms-md-2"
                         onclick="window.open('https://docs.google.com/forms/d/1fragHn3j29nb1vLsGX21rAFFAkJusAb4mp0r3_D_rWs/viewform', '_blank')">
@@ -200,6 +200,34 @@
         </div>
     </div>
 </section>
+<a href="#top">
+    <button class="animated-button-secondary back-to-top">
+        <svg class="arr-2" style="transform: rotate(-90deg);" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path
+                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+            ></path>
+        </svg>
+        <span class="text">Top</span>
+        <span class="circle"></span>
+        <svg class="arr-1" style="transform: rotate(-90deg);" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path
+                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+            ></path>
+        </svg>
+    </button>
+</a>
+<script>
+    const backToTopBtn = document.querySelector('.back-to-top');
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+            backToTopBtn.classList.add('show');
+        } else {
+            backToTopBtn.classList.remove('show');
+        }
+    });
+</script>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="assets/js/bs-init.js"></script>
 </body>

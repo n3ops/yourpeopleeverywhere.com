@@ -43,6 +43,16 @@ body {
 
 /* === Link Styles === */
 
+/* Active link (underlined with yellow) */
+
+a.active, a:focus, a:active {
+    color: #d0e500;
+}
+
+a.active::after {
+    width: 100%;
+}
+
 a {
     color: #244300;
     text-decoration: none;

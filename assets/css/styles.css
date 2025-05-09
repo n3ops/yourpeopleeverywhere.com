@@ -18,15 +18,15 @@ body {
 
 /* === Section Backgrounds === */
 
-#problem {
+#problem, #signal {
     background-color: #d0e500;
 }
 
-#solution {
+#solution, #why, #session {
     background-color: #eef2ca;
 }
 
-#mission {
+#mission, #what {
     background-color: #c0d8d8;
 }
 
